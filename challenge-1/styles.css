@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: auto 250px 250px auto;
+  grid-template-rows: 250px 250px;
+  grid-gap: 20px;
+  background: #4483D4;
+  padding: 20px;
+  color: white;
+}
+
+.section-1 > .box1 {
+  grid-column: 2;
+}
+
+.section-1 > .box3 {
+grid-column: 2 / span 2;
+}
+
+.section {
+
+}
+
+.section-1 > .box {
+  background: #2C60B8;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-size: 40px;
+
+}
