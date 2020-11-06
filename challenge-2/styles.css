@@ -15,7 +15,7 @@ body {
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: minmax(auto, 350px) auto;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: 
   "header header"
@@ -50,7 +50,15 @@ body {
 }
 
 .sidebar {
-background-color: slateblue;
+  background-color: slateblue;
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+  grid-template-rows: repeat(3, 150px);
+}
+
+.sidebar-item {
+  background-color: gray;
 }
 
 .main {
