@@ -26,6 +26,27 @@ body {
 .header{
   background-color: salmon;
   grid-area: header;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: minmax(auto, 200px) auto repeat(2, minmax(auto, 200px));
+  grid-template-rows: 200px;
+  grid-gap: 20px;
+}
+
+.header-item {
+  background-color: grey;
+}
+
+.h-item1 {
+  grid-column: 1;
+}
+
+.h-item2 {
+  grid-column: 3;
+}
+
+.h-item3 {
+  grid-column: 4;
 }
 
 .sidebar {
