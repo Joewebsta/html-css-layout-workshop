@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.hero {
+  border: 5px solid goldenrod;
+  height: 700px;
+  display: grid;
+  align-content: center;
+}
+
+.hero-wrapper {
+  max-width: 700px;
+  width: 50%;
+  margin: 0 auto; 
+  display: grid;
+  grid-gap: 50px;
+  grid-template-rows: 50px 300px 50px;
+}
+
+.hero-box {
+  background-color: tomato;
+}
+
+.h-box-item1 {
+}
+
+.h-box-item2 {
+  justify-self: center;
+  width: 300px;
+}
+
+.h-box-item3 {
+}
